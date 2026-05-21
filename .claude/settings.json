@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx tsc *)",
+      "Bash(npx next *)",
+      "Bash(Move-Item \"c:\\\\Code projects\\\\marks\\\\next.config.ts\" \"c:\\\\Code projects\\\\marks\\\\next.config.mjs\")",
+      "Bash(node -e \"const c=require\\('crypto'\\); console.log\\('JWT='+c.randomBytes\\(32\\).toString\\('hex'\\)\\); console.log\\('SEED='+c.randomBytes\\(12\\).toString\\('hex'\\)\\)\")"
+    ]
+  }
+}

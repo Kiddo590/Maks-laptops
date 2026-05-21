@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marks Electronics — Kenya's Premier Electronics Store</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Marks Electronics — shop the latest phones, laptops, TVs, cameras and more. Best prices in Kenya." />
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     PROMO BAR
+══════════════════════════════════════════ -->
+<div class="promo-bar">
+  🚚 FREE DELIVERY on orders above KES 5,000
+  <span>|</span>
+  📞 Call us: +254 747 900 900
+  <span>|</span>
+  🔒 Secure Payments &amp; Genuine Products
+</div>
+
+<!-- ══════════════════════════════════════════
+     HEADER
+══════════════════════════════════════════ -->
+<header class="site-header">
+  <div class="header-inner">
+
+    <!-- Hamburger (mobile) -->
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- Logo -->
+    <div class="logo">
+      <a href="#">
+        <div class="logo-icon">⚡</div>
+        MARKS ELECTRONICS
+      </a>
+    </div>
+
+    <!-- Search -->
+    <div class="search-bar">
+      <input type="text" placeholder="Search phones, laptops, TVs, accessories…" aria-label="Search products" />
+      <button class="search-btn" aria-label="Search">🔍</button>
+    </div>
+
+    <!-- Actions -->
+    <div class="header-actions">
+      <a href="#" class="action-btn" aria-label="Wishlist" title="Wishlist">
+        ♡
+      </a>
+      <a href="#" class="action-btn" aria-label="Cart" title="Cart">
+        🛒
+        <span class="badge" id="cart-badge">0</span>
+      </a>
+    </div>
+
+    <div class="header-phone">📞 +254 747 900 900</div>
+  </div>
+</header>
+
+<!-- ══════════════════════════════════════════
+     MAIN NAV
+══════════════════════════════════════════ -->
+<nav class="main-nav">
+  <div class="nav-inner">
+    <a href="#" data-section="all">All Products</a>
+    <a href="#phones" data-section="phones">📱 Phones &amp; Tablets</a>
+    <a href="#laptops" data-section="laptops">💻 Laptops</a>
+    <a href="#tv" data-section="tv">📺 TVs &amp; Audio</a>
+    <a href="#cameras" data-section="cameras">📷 Cameras</a>
+    <a href="#gaming" data-section="gaming">🎮 Gaming</a>
+    <a href="#smarthome" data-section="smarthome">🏠 Smart Home</a>
+    <a href="#deals" class="sale-link" data-section="deals">🔥 Sale</a>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════
+     MOBILE NAV DRAWER
+══════════════════════════════════════════ -->
+<div class="overlay" id="overlay"></div>
+<nav class="mobile-nav" id="mobile-nav">
+  <div class="mobile-nav-header">
+    <div class="mobile-nav-logo">⚡ MARKS ELECTRONICS</div>
+    <button class="close-nav" id="close-nav" aria-label="Close menu">✕</button>
+  </div>
+  <a href="#">🏠 Home</a>
+  <a href="#">📱 Phones &amp; Tablets</a>
+  <a href="#">💻 Laptops</a>
+  <a href="#">📺 TVs &amp; Audio</a>
+  <a href="#">📷 Cameras</a>
+  <a href="#">🎮 Gaming</a>
+  <a href="#">🏠 Smart Home</a>
+  <a href="#">🎧 Accessories</a>
+  <a href="#" class="sale-link">🔥 Sale</a>
+</nav>
+
+<!-- ══════════════════════════════════════════
+     HERO BANNER
+══════════════════════════════════════════ -->
+<section class="hero" id="all">
+  <div class="hero-main">
+    <img
+      src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1280&h=480&fit=crop&q=80"
+      alt="Electronics hero"
+      loading="eager"
+    />
+    <div class="hero-overlay">
+      <span class="hero-tag">New Collection 2025</span>
+      <h1 class="hero-title">Power Up Your<br>Digital Life</h1>
+      <p class="hero-sub">The latest smartphones, laptops, and tech — delivered to your door anywhere in Kenya.</p>
+      <a href="#picks" class="hero-cta">Shop Now →</a>
+    </div>
+  </div>
+
+  <div class="hero-mini">
+    <div class="mini-banner">
+      <img
+        src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=640&h=200&fit=crop&q=80"
+        alt="New Arrivals"
+      />
+      <div class="mini-overlay">
+        <span class="mini-label">Just Landed</span>
+        <div class="mini-title">New Arrivals</div>
+        <a href="#picks" class="mini-link">Explore →</a>
+      </div>
+    </div>
+    <div class="mini-banner">
+      <img
+        src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=640&h=200&fit=crop&q=80"
+        alt="Hot Deals"
+      />
+      <div class="mini-overlay">
+        <span class="mini-label">Limited Time</span>
+        <div class="mini-title">Hot Deals</div>
+        <a href="#deals" class="mini-link">View Deals →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     CATEGORY GRID
+══════════════════════════════════════════ -->
+<section class="section" id="categories">
+  <div class="section-header">
+    <h2 class="section-title">Shop by Category</h2>
+    <a href="#" class="view-all">View All →</a>
+  </div>
+  <div class="category-grid">
+
+    <div class="category-card" id="phones">
+      <img
+        src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=160&fit=crop&q=80"
+        alt="Phones & Tablets"
+        loading="lazy"
+      />
+      <div class="category-info">
+        <h3>Phones &amp; Tablets</h3>
+        <span class="category-link">Shop Now →</span>
+      </div>
+    </div>
+
+    <div class="category-card" id="laptops">
+      <img
+        src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400&h=160&fit=crop&q=80"
+        alt="Laptops"
+        loading="lazy"
+      />
+      <div class="category-info">
+        <h3>Laptops &amp; Computers</h3>
+        <span class="category-link">Shop Now →</span>
+      </div>
+    </div>
+
+    <div class="category-card" id="tv">
+      <img
+        src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=160&fit=crop&q=80"
+        alt="TVs & Audio"
+        loading="lazy"
+      />
+      <div class="category-info">
+        <h3>TVs &amp; Audio</h3>
+        <span class="category-link">Shop Now →</span>
+      </div>
+    </div>
+
+    <div class="category-card">
+      <img
+        src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=160&fit=crop&q=80"
+        alt="Headphones"
+        loading="lazy"
+      />
+      <div class="category-info">
+        <h3>Headphones &amp; Earbuds</h3>
+        <span class="category-link">Shop Now →</span>
+      </div>
+    </div>
+
+    <div class="category-card" id="cameras">
+      <img
+        src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=400&h=160&fit=crop&q=80"
+        alt="Cameras"
+        loading="lazy"
+      />
+      <div class="category-info">
+        <h3>Cameras &amp; Drones</h3>
+        <span class="category-link">Shop Now →</span>
+      </div>
+    </div>
+
+    <div class="category-card" id="gaming">
+      <img
+        src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=400&h=160&fit=crop&q=80"
+        alt="Gaming"
+        loading="lazy"
+      />
+      <div class="category-info">
+        <h3>Gaming</h3>
+        <span class="category-link">Shop Now →</span>
+      </div>
+    </div>
+
+    <div class="category-card" id="smarthome">
+      <img
+        src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=160&fit=crop&q=80"
+        alt="Smart Home"
+        loading="lazy"
+      />
+      <div class="category-info">
+        <h3>Smart Home</h3>
+        <span class="category-link">Shop Now →</span>
+      </div>
+    </div>
+
+    <div class="category-card">
+      <img
+        src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=400&h=160&fit=crop&q=80"
+        alt="Accessories"
+        loading="lazy"
+      />
+      <div class="category-info">
+        <h3>Accessories</h3>
+        <span class="category-link">Shop Now →</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     MARK'S PICKS — FEATURED PRODUCTS
+══════════════════════════════════════════ -->
+<section class="section" id="picks">
+  <div class="section-header">
+    <h2 class="section-title">Mark's Picks</h2>
+    <a href="#" class="view-all">View All →</a>
+  </div>
+  <div class="product-grid">
+
+    <!-- 1 -->
+    <div class="product-card" data-name="Samsung Galaxy S24 Ultra">
+      <div class="product-img-wrap">
+        <span class="badge-new">New</span>
+        <button class="wishlist-btn" data-id="p1" aria-label="Add to wishlist">♡</button>
+        <img
+          src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=400&h=200&fit=crop&q=80"
+          alt="Samsung Galaxy S24 Ultra"
+          loading="lazy"
+        />
+      </div>
+      <div class="product-info">
+        <div class="product-name">Samsung Galaxy S24 Ultra</div>
+        <div class="product-price-row">
+          <span class="price-current">KES 145,000</span>
+        </div>
+        <button class="add-cart-btn">🛒 Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="product-card" data-name="iPhone 15 Pro">
+      <div class="product-img-wrap">
+        <span class="badge-new">New</span>
+        <button class="wishlist-btn" data-id="p2" aria-label="Add to wishlist">♡</button>
+        <img
+          src="https://images.unsplash.com/photo-1678685888221-cda773a3dcdb?w=400&h=200&fit=crop&q=80"
+          alt="iPhone 15 Pro"
+          loading="lazy"
+        />
+      </div>
+      <div class="product-info">
+        <div class="product-name">iPhone 15 Pro</div>
+        <div class="product-price-row">
+          <span class="price-current">KES 135,000</span>
+        </div>
+        <button class="add-cart-btn">🛒 Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="product-card" data-name="MacBook Air M2">
+      <div class="product-img-wrap">
+        <button class="wishlist-btn" data-id="p3" aria-label="Add to wishlist">♡</button>
+        <img
+          src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&h=200&fit=crop&q=80"
+          alt="MacBook Air M2"
+          loading="lazy"
+        />
+      </div>
+      <div class="product-info">
+        <div class="product-name">MacBook Air M2</div>
+        <div class="product-price-row">
+          <span class="price-current">KES 148,000</span>
+        </div>
+        <button class="add-cart-btn">🛒 Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="product-card" data-name="Dell XPS 15 Laptop">
+      <div class="product-img-wrap">
+        <span class="badge-sale">Sale</span>
+        <button class="wishlist-btn" data-id="p4" aria-label="Add to wishlist">♡</button>
+        <img
+          src="https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=400&h=200&fit=crop&q=80"
+          alt="Dell XPS 15"
+          loading="lazy"
+        />
+      </div>
+      <div class="product-info">
+        <div class="product-name">Dell XPS 15 Laptop</div>
+        <div class="product-price-row">
+          <span class="price-current">KES 118,000</span>
+          <span class="price-old">KES 138,000</span>
+        </div>
+        <button class="add-cart-btn">🛒 Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="product-card" data-name="Sony WH-1000XM5 Headphones">
+      <div class="product-img-wrap">
+        <button class="wishlist-btn" data-id="p5" aria-label="Add to wishlist">♡</button>
+        <img
+          src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=200&fit=crop&q=80"
+          alt="Sony WH-1000XM5"
+          loading="lazy"
+        />
+      </div>
+      <div class="product-info">
+        <div class="product-name">Sony WH-1000XM5 Headphones</div>
+        <div class="product-price-row">
+          <span class="price-current">KES 28,500</span>
+        </div>
+        <button class="add-cart-btn">🛒 Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="product-card" data-name="Canon EOS R50 Camera">
+      <div class="product-img-wrap">
+        <span class="badge-new">New</span>
+        <button class="wishlist-btn" data-id="p6" aria-label="Add to wishlist">♡</button>
+        <img
+          src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=400&h=200&fit=crop&q=80"
+          alt="Canon EOS R50"
+          loading="lazy"
+        />
+      </div>
+      <div class="product-info">
+        <div class="product-name">Canon EOS R50 Camera</div>
+        <div class="product-price-row">
+          <span class="price-current">KES 64,000</span>
+        </div>
+        <button class="add-cart-btn">🛒 Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="product-card" data-name="PlayStation 5 Console">
+      <div class="product-img-wrap">
+        <button class="wishlist-btn" data-id="p7" aria-label="Add to wishlist">♡</button>
+        <img
+          src="https://images.unsplash.com/photo-1607853202273-797f1c22a38e?w=400&h=200&fit=crop&q=80"
+          alt="PlayStation 5"
+          loading="lazy"
+        />
+      </div>
+      <div class="product-info">
+        <div class="product-name">PlayStation 5 Console</div>
+        <div class="product-price-row">
+          <span class="price-current">KES 72,000</span>
+        </div>
+        <button class="add-cart-btn">🛒 Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- 8 -->
+    <div class="product-card" data-name="Apple Watch Series 9">
+      <div class="product-img-wrap">
+        <span class="badge-new">New</span>
+        <button class="wishlist-btn" data-id="p8" aria-label="Add to wishlist">♡</button>
+        <img
+          src="https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=400&h=200&fit=crop&q=80"
+          alt="Apple Watch Series 9"
+          loading="lazy"
+        />
+      </div>
+      <div class="product-info">
+        <div class="product-name">Apple Watch Series 9</div>
+        <div class="product-price-row">
+          <span class="price-current">KES 46,000</span>
+        </div>
+        <button class="add-cart-btn">🛒 Add to Cart</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     HOT DEALS
+══════════════════════════════════════════ -->
+<div class="deals-bg" id="deals">
+  <div class="deals-inner">
+    <div class="deals-header">
+      <h2 class="deals-title">🔥 Hot Deals</h2>
+      <a href="#" class="deals-view-all">View All Deals →</a>
+    </div>
+    <div class="deals-grid">
+
+      <!-- Deal 1 -->
+      <div class="deal-card" data-name="Samsung 55&quot; QLED TV">
+        <div class="deal-img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=180&fit=crop&q=80"
+            alt="Samsung 55 QLED TV"
+            loading="lazy"
+          />
+          <span class="deal-stock-badge">⚡ Limited Stock</span>
+        </div>
+        <div class="deal-info">
+          <div class="deal-name">Samsung 55" QLED 4K TV</div>
+          <div class="deal-prices">
+            <span class="deal-current">KES 87,000</span>
+            <span class="deal-old">KES 115,000</span>
+          </div>
+          <div class="deal-savings">Save KES 28,000 (24% off)</div>
+          <button class="buy-now-btn" style="margin-top:12px">Buy Now →</button>
+        </div>
+      </div>
+
+      <!-- Deal 2 -->
+      <div class="deal-card" data-name="iPad Pro 12.9&quot;">
+        <div class="deal-img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=400&h=180&fit=crop&q=80"
+            alt="iPad Pro 12.9"
+            loading="lazy"
+          />
+          <span class="deal-stock-badge">⚡ Limited Stock</span>
+        </div>
+        <div class="deal-info">
+          <div class="deal-name">iPad Pro 12.9" (M2 Chip)</div>
+          <div class="deal-prices">
+            <span class="deal-current">KES 98,000</span>
+            <span class="deal-old">KES 118,000</span>
+          </div>
+          <div class="deal-savings">Save KES 20,000 (17% off)</div>
+          <button class="buy-now-btn" style="margin-top:12px">Buy Now →</button>
+        </div>
+      </div>
+
+      <!-- Deal 3 -->
+      <div class="deal-card" data-name="JBL Charge 5 Speaker">
+        <div class="deal-img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=180&fit=crop&q=80"
+            alt="JBL Charge 5"
+            loading="lazy"
+          />
+          <span class="deal-stock-badge">⚡ Limited Stock</span>
+        </div>
+        <div class="deal-info">
+          <div class="deal-name">JBL Charge 5 Bluetooth Speaker</div>
+          <div class="deal-prices">
+            <span class="deal-current">KES 9,500</span>
+            <span class="deal-old">KES 13,500</span>
+          </div>
+          <div class="deal-savings">Save KES 4,000 (30% off)</div>
+          <button class="buy-now-btn" style="margin-top:12px">Buy Now →</button>
+        </div>
+      </div>
+
+      <!-- Deal 4 -->
+      <div class="deal-card" data-name="Logitech MX Master 3 Mouse">
+        <div class="deal-img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400&h=180&fit=crop&q=80"
+            alt="Logitech MX Master 3"
+            loading="lazy"
+          />
+          <span class="deal-stock-badge">⚡ Limited Stock</span>
+        </div>
+        <div class="deal-info">
+          <div class="deal-name">Logitech MX Master 3 Mouse</div>
+          <div class="deal-prices">
+            <span class="deal-current">KES 8,200</span>
+            <span class="deal-old">KES 11,000</span>
+          </div>
+          <div class="deal-savings">Save KES 2,800 (25% off)</div>
+          <button class="buy-now-btn" style="margin-top:12px">Buy Now →</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     BEST SELLERS STRIP
+══════════════════════════════════════════ -->
+<section class="section" id="bestsellers">
+  <div class="section-header">
+    <h2 class="section-title">Best Sellers</h2>
+    <a href="#" class="view-all">View All →</a>
+  </div>
+  <div class="product-grid">
+
+    <!-- 9 -->
+    <div class="product-card" data-name="Samsung Galaxy A54">
+      <div class="product-img-wrap">
+        <button class="wishlist-btn" data-id="p9" aria-label="Add to wishlist">♡</button>
+        <img
+          src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=400&h=200&fit=crop&q=80"
+          alt="Samsung Galaxy A54"
+          loading="lazy"
+        />
+      </div>
+      <div class="product-info">
+        <div class="product-name">Samsung Galaxy A54</div>
+        <div class="product-price-row">
+          <span class="price-current">KES 42,000</span>
+        </div>
+        <button class="add-cart-btn">🛒 Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- 10 -->
+    <div class="product-card" data-name="HP Pavilion 15 Laptop">
+      <div class="product-img-wrap">
+        <span class="badge-sale">Sale</span>
+        <button class="wishlist-btn" data-id="p10" aria-label="Add to wishlist">♡</button>
+        <img
+          src="https://images.unsplash.com/photo-1484788984921-03950022c9ef?w=400&h=200&fit=crop&q=80"
+          alt="HP Pavilion 15"
+          loading="lazy"
+        />
+      </div>
+      <div class="product-info">
+        <div class="product-name">HP Pavilion 15 Laptop</div>
+        <div class="product-price-row">
+          <span class="price-current">KES 68,000</span>
+          <span class="price-old">KES 82,000</span>
+        </div>
+        <button class="add-cart-btn">🛒 Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- 11 -->
+    <div class="product-card" data-name="Samsung 65&quot; Crystal UHD TV">
+      <div class="product-img-wrap">
+        <button class="wishlist-btn" data-id="p11" aria-label="Add to wishlist">♡</button>
+        <img
+          src="https://images.unsplash.com/photo-1461151304267-38535e780c79?w=400&h=200&fit=crop&q=80"
+          alt="Samsung 65 UHD TV"
+          loading="lazy"
+        />
+      </div>
+      <div class="product-info">
+        <div class="product-name">Samsung 65" Crystal UHD TV</div>
+        <div class="product-price-row">
+          <span class="price-current">KES 72,000</span>
+        </div>
+        <button class="add-cart-btn">🛒 Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- 12 -->
+    <div class="product-card" data-name="AirPods Pro 2nd Gen">
+      <div class="product-img-wrap">
+        <span class="badge-new">New</span>
+        <button class="wishlist-btn" data-id="p12" aria-label="Add to wishlist">♡</button>
+        <img
+          src="https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=400&h=200&fit=crop&q=80"
+          alt="AirPods Pro"
+          loading="lazy"
+        />
+      </div>
+      <div class="product-info">
+        <div class="product-name">AirPods Pro (2nd Gen)</div>
+        <div class="product-price-row">
+          <span class="price-current">KES 24,500</span>
+        </div>
+        <button class="add-cart-btn">🛒 Add to Cart</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     NEWSLETTER
+══════════════════════════════════════════ -->
+<div class="newsletter-wrap">
+  <div class="newsletter-card">
+    <div class="newsletter-icon">📩</div>
+    <h2>Stay in the Loop</h2>
+    <p>Subscribe for exclusive deals, new arrivals, and tech news delivered straight to your inbox.</p>
+    <form class="newsletter-form" id="newsletter-form">
+      <input type="email" placeholder="Enter your email address" required aria-label="Email address" />
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="footer-grid">
+
+    <!-- About -->
+    <div>
+      <div class="footer-logo">
+        <div class="logo-icon">⚡</div>
+        MARKS ELECTRONICS
+      </div>
+      <p class="footer-about">
+        Kenya's trusted electronics retailer since 2015. We offer genuine products, competitive prices,
+        and fast delivery across the country. Shop with confidence.
+      </p>
+      <div class="footer-socials">
+        <a href="#" class="social-btn" title="Facebook" aria-label="Facebook">f</a>
+        <a href="#" class="social-btn" title="Instagram" aria-label="Instagram">📷</a>
+        <a href="#" class="social-btn" title="Twitter / X" aria-label="Twitter">𝕏</a>
+        <a href="#" class="social-btn" title="WhatsApp" aria-label="WhatsApp">💬</a>
+        <a href="#" class="social-btn" title="YouTube" aria-label="YouTube">▶</a>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">All Products</a></li>
+        <li><a href="#">New Arrivals</a></li>
+        <li><a href="#">Best Sellers</a></li>
+        <li><a href="#">Sale &amp; Offers</a></li>
+        <li><a href="#">Track My Order</a></li>
+        <li><a href="#">Gift Cards</a></li>
+      </ul>
+    </div>
+
+    <!-- Customer Care -->
+    <div class="footer-col">
+      <h4>Customer Care</h4>
+      <ul>
+        <li><a href="#">Help Centre</a></li>
+        <li><a href="#">Returns &amp; Refunds</a></li>
+        <li><a href="#">Warranty Policy</a></li>
+        <li><a href="#">Shipping Info</a></li>
+        <li><a href="#">Size Guide</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <div class="contact-item">
+        <span class="contact-icon">📍</span>
+        <span>Westlands Mall, Waiyaki Way,<br>Nairobi, Kenya</span>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">📞</span>
+        <span>+254 747 900 900</span>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">✉️</span>
+        <span>support@markselectronics.co.ke</span>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">🕒</span>
+        <span>Mon – Sat: 8:00 AM – 7:00 PM<br>Sun: 10:00 AM – 5:00 PM</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2025 Marks Electronics. All rights reserved.</span>
+    <div class="footer-payments">
+      <span class="payment-chip">M-Pesa</span>
+      <span class="payment-chip">Visa</span>
+      <span class="payment-chip">Mastercard</span>
+      <span class="payment-chip">Airtel Money</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ══════════════════════════════════════════
+     TOAST
+══════════════════════════════════════════ -->
+<div class="toast" id="toast" role="alert" aria-live="polite">
+  <span id="toast-msg"></span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

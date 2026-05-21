@@ -11,7 +11,7 @@ export default function Header() {
   const [allProducts, setAllProducts] = useState<Product[]>([])
   const [loadedProducts, setLoadedProducts] = useState(false)
   const [showDropdown, setShowDropdown] = useState(false)
-  const searchRef = useRef<HTMLDivElement>(null)
+  const searchRef = useRef<HTMLFormElement>(null)
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10)

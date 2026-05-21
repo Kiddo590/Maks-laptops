@@ -72,6 +72,7 @@ export default function Footer() {
           <span className="payment-chip">Mastercard</span>
           <span className="payment-chip">Airtel Money</span>
         </div>
+        <a href="/admin" className="admin-footer-link">Admin</a>
       </div>
     </footer>
   )
